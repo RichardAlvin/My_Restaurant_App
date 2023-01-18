@@ -1,3 +1,77 @@
+body{
+  margin:0;
+  padding:0;
+}
+
+/* Nav */
+.nav {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.nav__list {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.nav__item {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 10%;
+  text-align: center;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.nav__item_title{
+  width:56%;
+  text-align: left;
+  box-sizing: border-box;
+  display: inline-block;
+}
+
+.nav__item_logo{
+  width:4%;
+  box-sizing: border-box;
+  display: inline-block;
+}
+
+.nav__item_logo img{
+  width:50px;
+}
+
+.nav a {
+  display: inline-block;
+  padding: 1.3em;
+  text-decoration: none;
+  color: #616161;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+  color: #000;
+}
+
+
+/* Main */
 img {
   display: block;
+}
+
+
+/* Daftar-Resto */
+
+
+/* Footer */
+footer{
+  padding-top:20px;
+  padding-bottom:20px;
+  background-color: lightblue;
+}
+
+footer p{
+  text-align: center;
 }
