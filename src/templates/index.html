@@ -6,7 +6,7 @@
   <title>Restaurant Apps Starter Project</title>
 </head>
 <body>
-  <nav id="drawer" class="nav">
+  <!-- <nav id="drawer" class="nav">
     <ul class="nav__list">
       <li class="nav__item_logo"><img src="./images/logo/logoApp.jpg"></li>
       <li class="nav__item_title"><a href="#">Fast Resto</a></li>
@@ -14,17 +14,75 @@
       <li class="nav__item"><a href="#">Favorite</a></li>
       <li class="nav__item"><a href="#">About Us</a></li>
     </ul>
+  </nav> -->
+  <!-- Responsive Nav -->
+  <!-- <nav id="drawer" class="nav">
+    <ul class="nav__list">
+      <li class="nav__item"><a href="#">Articles</a></li>
+      <li class="nav__item"><a href="#">Tutorials</a></li>
+      <li class="nav__item"><a href="#">Information</a></li>
+      <li class="nav__item"><a href="#">Stories</a></li>
+    </ul>
+  </nav> -->
+
+  <!-- Normal Nav -->
+  <nav id="drawer" class="nav">
+    <div><h1>Fast Resto</h1></div>
+    <div></div>
+    <div><a href="#">Home</a></div>
+    <div><a href="#">Favourite</a></div>
+    <div><a href="#">About</a></div>
   </nav>
+  <a id="hamburger" class="hamburger_nav">☰</a>
   <main>
-    <section id="hero"></section>
-    <section id="daftar-resto"></section>
+    <section id="hero">
+      <div class="hero-content">
+        <h1>Fastest Places<br>Find Special<br><span style="color:lightblue">Restaurants</span></h1>
+        <p>Fast Resto give you new experience find restaurant and it's all about FAST</p>
+      </div>
+      <div class="hero-image">
+        <img src="./images/heros/hero-image.svg" alt="">
+      </div>
+    </section>
+    <section id="daftar-resto">
+      <h1>Explore Restaurant</h1>
+      <div class="daftar-resto-inner">
+        <resto-list></resto-list>
+        <!-- <div class="daftar-resto-inner-card">
+          <img src="./images/heros/hero-image_1.jpg" alt="">
+          <p class="rate">Rating: 4.5</p>
+          <h2>Serpong Restaurant</h2>
+          <p class="desc">Restauran bertemakan perang saudara dengan perang perangan yang mengelegar jiwa dan raga</p>
+        </div>
+        <div class="daftar-resto-inner-card">
+          <img src="" alt="">
+          <h1>test</h1>
+        </div>
+        <div class="daftar-resto-inner-card">
+          <h1>test</h1>
+        </div> -->
+      </div>
+    </section>
   </main>
-  <h1>Restaurant Apps Starter Projects</h1>
-  <p>Hallo coders! Anda berhasil menjalankan starter project.</p>
-  <p>Jangan lupa untuk menggunakan salah satu gambar yang berada pada ./images/heros sebagai background hero elemen</p>
-  <img src="./images/heros/hero-image_1.jpg" width="450" alt="">
   <footer>
     <p>Copyright @ 2022 - Fast Resto</p>
   </footer>
 </body>
+<script src="../scripts/index.js" type="module"></script>
+<script>
+  const hamburgerButtonElement = document.querySelector('#hamburger');
+  const drawerElement = document.querySelector('#drawer');
+  
+  hamburgerButtonElement.addEventListener('click', event => {
+    drawerElement.classList.toggle('open');
+    event.stopPropagation();
+  });
+
+  const mainElement = document.querySelector('body');
+
+  mainElement.addEventListener('click', event => {
+    drawerElement.classList.remove('open');
+    event.stopPropagation();
+  });
+</script>
 </html>

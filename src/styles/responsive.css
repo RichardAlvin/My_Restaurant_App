@@ -1,0 +1,38 @@
+@media screen and (min-width: 350px){
+    .daftar-resto-inner{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 650px){
+    .daftar-resto-inner{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .hamburger_nav{
+        display:none;
+    }
+}
+
+@media screen and (max-width: 650px){
+    .nav{
+        width: 250px;
+        height: 100%;
+        position: absolute;
+        transform: translate(-250px, 0);
+        transition: transform 0.3s ease-in-out;
+        background-color: #111;
+    }
+
+    .nav.open{
+        transform: translate(0,0);
+    }
+}
+
+@media screen and (max-width:900px){
+    .nav{
+        grid-template-columns: 2fr 4fr 1fr 1fr 1fr;
+    }
+}

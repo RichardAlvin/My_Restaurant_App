@@ -5,42 +5,24 @@ body{
 
 /* Nav */
 .nav {
-  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 5fr 1fr 1fr 1fr;
+  padding: 0 5%;
+  box-shadow: 0 8px 6px -6px black;
+  /* width: 100%;
   margin-left: auto;
-  margin-right: auto;
+  margin-right: auto; */
 }
 
-.nav__list {
-  width: 100%;
-  padding: 0;
-  margin: 0;
-  text-align: center;
+.nav div{
+  align-items: center;
+  margin: auto;
 }
 
-.nav__item {
-  box-sizing: border-box;
-  display: inline-block;
-  width: 10%;
-  text-align: center;
-  line-height: 24px;
-  text-transform: uppercase;
-}
-
-.nav__item_title{
-  width:56%;
-  text-align: left;
-  box-sizing: border-box;
-  display: inline-block;
-}
-
-.nav__item_logo{
-  width:4%;
-  box-sizing: border-box;
-  display: inline-block;
-}
-
-.nav__item_logo img{
-  width:50px;
+.nav a{
+  text-decoration: none;
+  color:black;
+  
 }
 
 .nav a {
@@ -56,19 +38,93 @@ body{
 }
 
 
+
+
 /* Main */
-img {
-  display: block;
+main{
+  width:100%;
 }
 
+#hero{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  text-align: center;
+  min-height:350px;
+  /* background-image: url("../public/images/heros/hero-image_2.jpg");
+  background-position: center;
+  background-color: green; */
+}
+
+.hero-content{
+  margin: 0 auto;
+  margin-left:10%;
+  text-align: left;
+}
+
+.hero-content h1{
+  font-weight: 500;
+  font-size: 36px;
+}
+
+.hero-content p{
+  margin-top: 16px;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.hero-image img{
+  width:100%;
+}
 
 /* Daftar-Resto */
+#daftar-resto{
+  padding: 0 5%;
+  margin-bottom: 10%;
+}
+
+#daftar-resto h1{
+  text-align: center;
+}
+
+.daftar-resto-inner{
+  display: grid;
+  grid-template-columns: 1fr;
+  column-gap: 10px;
+  row-gap: 10px;
+}
+
+.daftar-resto-inner-card{
+  border: 1px solid black;
+}
+
+.daftar-resto-inner-card img{
+  width:100%;
+}
+
+.daftar-resto-inner-card .rate{
+  margin-top:5px;
+  margin-bottom:0px;
+  font-size: 16px;
+  padding-left:5%;
+}
+
+.daftar-resto-inner-card h2{
+  font-size: 20px;
+  padding-left:5%;
+}
+
+.daftar-resto-inner-card .desc{
+  margin-top: 1px;
+  font-size: 14px;
+  padding-left:5%;
+}
 
 
 /* Footer */
 footer{
-  padding-top:20px;
-  padding-bottom:20px;
+  padding-top:10px;
+  padding-bottom:10px;
   background-color: lightblue;
 }
 
