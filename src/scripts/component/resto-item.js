@@ -1,4 +1,9 @@
 class RestoItem extends HTMLElement{
+    // constructor(){
+    //     super();
+    //     this.ShadowDOM = this.attachShadow({mode: 'open'});
+    // }
+
     set resto(resto){
         this._resto = resto;
         this.render();
