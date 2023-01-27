@@ -25,7 +25,9 @@ title.innerHTML=restoItem[i].name;
 restoCard.appendChild(title);
 
 let desc = document.createElement('p');
-desc.innerHTML=restoItem[i].description;
+// let description = restoItem[i].description;
+// desc.innerHTML= description.substr(0,20);
+desc.innerHTML = restoItem[i].description;
 desc.classList.add('desc');
 restoCard.appendChild(desc);
 

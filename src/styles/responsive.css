@@ -1,7 +1,13 @@
-@media screen and (min-width: 350px){
+@media screen and (min-width: 375px){
     .daftar-resto-inner{
         display: grid;
         grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 375px){
+    .daftar-resto-inner-card{
+        max-height: 150px;
     }
 }
 
@@ -18,21 +24,65 @@
 
 @media screen and (max-width: 650px){
     .nav{
-        width: 250px;
-        height: 100%;
+        width: 150px;
+        height: 40%;
         position: absolute;
         transform: translate(-250px, 0);
         transition: transform 0.3s ease-in-out;
         background-color: #111;
+        grid-template-columns: none;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+
+    .nav h1{
+        color:white;
+    }
+
+    .nav a{
+        color:white;
     }
 
     .nav.open{
         transform: translate(0,0);
     }
+
+    .daftar-resto-inner-card{
+        max-height: 250px;
+    }
+
+    #hero{
+        grid-template-columns: none;
+        grid-template-rows: 1fr;
+        padding-top: 40px;
+        margin-right:10px;
+    }
+
+    .hero-content h1{
+        text-align: center;
+    }
+      
+    .hero-content p{
+        text-align: center;
+    }
+
+    .hero-image img{
+        margin-left:7%;
+        width:50%;
+    }
 }
 
 @media screen and (max-width:900px){
-    .nav{
+    /* .nav{
         grid-template-columns: 2fr 4fr 1fr 1fr 1fr;
+    } */
+
+    .daftar-resto-inner-card img{
+        width:100%;
+        min-height: 200px;
+        max-height: 200px;
+    }
+
+    .daftar-resto-inner-card{
+        max-height: 350px;
     }
 }

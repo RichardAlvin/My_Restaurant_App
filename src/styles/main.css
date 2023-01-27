@@ -6,12 +6,16 @@ body{
 /* Nav */
 .nav {
   display: grid;
-  grid-template-columns: 1fr 5fr 1fr 1fr 1fr;
+  grid-template-columns: 4fr 1fr 1fr 1fr;
   padding: 0 5%;
   box-shadow: 0 8px 6px -6px black;
   /* width: 100%;
   margin-left: auto;
   margin-right: auto; */
+}
+
+.nav .logo{
+  margin-left:5%;
 }
 
 .nav div{
@@ -37,6 +41,12 @@ body{
   color: #000;
 }
 
+.hamburger_nav{
+  position:absolute;
+  right:5%;
+  top:1%;
+  font-size: 40px;
+}
 
 
 
@@ -73,6 +83,10 @@ main{
   font-weight: 300;
 }
 
+.hero-image{
+  margin:auto;
+}
+
 .hero-image img{
   width:100%;
 }
@@ -96,10 +110,14 @@ main{
 
 .daftar-resto-inner-card{
   border: 1px solid black;
+  max-height: 500px;
+  overflow: auto;
 }
 
 .daftar-resto-inner-card img{
   width:100%;
+  min-height: 300px;
+  max-height: 300px;
 }
 
 .daftar-resto-inner-card .rate{
@@ -118,6 +136,7 @@ main{
   margin-top: 1px;
   font-size: 14px;
   padding-left:5%;
+  line-height: 20px;
 }
 
 
