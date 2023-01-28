@@ -13,6 +13,7 @@ restoCard.classList.add("daftar-resto-inner-card");
 
 let image = document.createElement('img');
 image.src = restoItem[i].pictureId;
+image.alt = restoItem[i].name;
 restoCard.appendChild(image);
 
 let rate = document.createElement('p');
