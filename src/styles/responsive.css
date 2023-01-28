@@ -64,11 +64,6 @@
     .hero-content p{
         text-align: center;
     }
-
-    .hero-image img{
-        margin-left:7%;
-        width:50%;
-    }
 }
 
 @media screen and (max-width:900px){

@@ -1,7 +1,7 @@
 import 'regenerator-runtime'; /* for async await transpile */
 import '../styles/main.css';
 import '../styles/responsive.css';
-import resto from '../DATA.json' assert { type: 'JSON' };
+import resto from '../DATA.json';
 //import main from './view/main.js';
 const restoItem = resto.restaurants;
 // Resto List
